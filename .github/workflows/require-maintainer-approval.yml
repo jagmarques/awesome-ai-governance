@@ -20,7 +20,7 @@ permissions:
 jobs:
   check-approval:
     name: "Policy: Awaiting maintainer review"
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, hz-ci-light]
     permissions:
       contents: read
       pull-requests: read
