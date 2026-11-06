@@ -27,7 +27,7 @@ concurrency:
 jobs:
   deploy:
     name: Build and deploy docs
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, hz-ci-light]
 
     steps:
       - uses: actions/checkout@v4
